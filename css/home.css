@@ -3,6 +3,13 @@
  * Copyright 2014 Start Bootstrap
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
+
+ @font-face { 
+     font-family: 'FontAwesome'; 
+     src: url('../font/fontawesome-webfont.eot?v=3.2.1'); 
+     src: url('../font/fontawesome-webfont.eot?#iefix&v=3.2.1');
+ }
+     
 @font-face {
     font-family: 'Avenir';
     src: url('../fonts/Avenir Roman.otf')
