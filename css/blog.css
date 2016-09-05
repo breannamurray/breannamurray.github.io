@@ -57,13 +57,13 @@ hr.small {
   border-color: white;
 }
 .navbar-default {
-    background-color: #000;
+    background-color: #000!important;
 }
 .navbar-default a {
     color: white!important;
 }
 .navbar-default a:hover {
-    color: #ff3333!important;
+    color: #535928!important;
 }
 .navbar-custom {
   position: absolute;
