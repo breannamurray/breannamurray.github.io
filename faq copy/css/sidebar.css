@@ -1,0 +1,174 @@
+
+.list-group {
+  padding-left: 0;
+  margin-bottom: 20px;
+    padding: 30px;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.list-group-item:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+a.list-group-item,
+button.list-group-item {
+  color: #518da0;
+}
+
+a.list-group-item:hover,
+button.list-group-item:hover,
+a.list-group-item:focus,
+button.list-group-item:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #518da0;
+}
+
+
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    border-color: #ddd;
+}
+
+
+#page-content-wrapper {
+    padding-left: 275px;
+}
+
+
+
+    @media(min-width:100px){ // 
+  .content {
+      margin-left:0;
+      padding-left:265px;
+      width:100%;
+    }
+}
+    
+     body {
+      position: relative;
+  }
+
+  ul.nav-pills {
+      top: -13px;
+      position: fixed;
+      background-color: #00B5C1;
+      margin-top: 300px;
+      width: 275px;
+      left: 0;
+      text-align: center;
+      height: 100%;
+      padding-top: 40px;
+  }
+
+.main-content {
+    width: auto;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+
+
+@media(min-width:767px) {
+    .panel {
+    display:none;
+    
+    }
+}
+
+
+   @media only screen
+   and (min-width : 320px)
+   and (max-width : 767px){ 
+       panel { 
+           display: inline;
+
+       }
+       
+        ul.nav-pills  {
+            display:none; !important
+      
+    }
+       
+       #page-content-wrapper {
+           padding-left: 0px;
+           padding-bottom: 50px;
+           
+       }
+       
+       /*.list-group {
+           margin-bottom: 5px;
+           position: static;
+}
+       
+      
+    
+}
+       
+       .jumbotron {
+           margin-bottom: 50px;
+           position: static;
+       }*/
+       
+       
+      
+}
+
+   @media only screen
+       and (min-width : 767px) { 
+
+           .main-content {
+                margin-top: 300px;
+                margin-bottom: 50px;
+                padding-bottom: 50px;
+               height: 800px;
+            }
+
+           
+                      
+           .jumbotron {
+            position: fixed;
+            }
+ 
+           
+               
+}
+
+
+   @media only screen
+       and (min-width : 2300px) { 
+
+           .main-content {
+                margin-top: 300px;
+                overflow-y: scroll;
+                margin-bottom: 50px;
+                padding-bottom: 50px;
+               height: 1000px;
+               z-index: auto;
+            }
+
+           
+                      
+           .jumbotron {
+            position: fixed;
+            }
+ 
+           
+               
+}
