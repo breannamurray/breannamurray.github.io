@@ -57,7 +57,8 @@ hr.small {
   border-color: white;
 }
 .navbar-default {
-    background-color: #000!important;
+    background-color: transparent;
+    border-color: transparent;
 }
 .navbar-default a {
     color: white!important;
@@ -65,6 +66,11 @@ hr.small {
 .navbar-default a:hover {
     color: #ff3333!important;
 }
+.navbar-default .nav li {
+background-color: #000!important;
+}
+.navbar-header {
+background-color: #000!important}
 .navbar-custom {
   position: absolute;
   top: 0;
