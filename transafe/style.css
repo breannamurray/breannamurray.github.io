@@ -1,0 +1,83 @@
+html{
+  height:100%
+}
+body{
+  height:100%;
+}
+.intro{
+  height:100%
+}
+.navbar-brand {
+    width:  100px;
+    height: 75px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.routes {
+  display : block;
+  align-items : center;
+  background-color:#fff;
+  height : 100%;
+  color : #000;
+}
+.map {
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  background:#000;
+  height : 100%;
+  color : #fff;
+}
+
+h1, .h1 {
+    margin-top: 200px;
+    text-align: center;
+    color: #333;
+}
+.btn-primary {
+    background-color: #00AEEF;
+    width: 300px;
+}
+.btn-primary:hover {
+    background-color: #fff;
+    color: #00AEEF;
+    margin: #00AEEF;
+}
+.legend {
+    max-width: 500px;
+    vertical-align: top!important;
+    position: absolute;
+    left: 0;
+    margin: 20px;
+}
+@media (max-width: 768px) { 
+  .routes{
+    height:50%
+  }
+  .map{
+    height:50%
+  }
+  .logo {
+    display:inline-block;
+    position: relative;
+  }
+  
+  h1, .h1 {
+    margin-top: 100px;
+}
+  .legend {
+    max-width: 80%;
+    vertical-align: top!important;
+    position: absolute;
+    margin: 20px;
+  }
+    .btn-primary {
+    width: 80%;
+    }
+  .navbar-default {
+    background-color: #fff;
+    border-color: transparent;
+}
+}
