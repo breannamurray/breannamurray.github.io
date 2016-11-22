@@ -43,11 +43,11 @@ h6 {
   font-weight: 800;
 }
 a {
-  color: #000;
+  color: #333;
 }
 a:hover,
 a:focus {
-  color: #535928;
+  color: #FFAD66;
 }
 a img:hover,
 a img:focus {
@@ -70,6 +70,7 @@ hr.small {
   width: 100%;
   z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: transparent!important;
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
@@ -82,7 +83,7 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: #000;
+    background: #333;
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
@@ -91,7 +92,7 @@ hr.small {
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: #535928;
+    color: #777!important;
   }
   .navbar-custom .nav li a {
     color: white;
@@ -99,7 +100,7 @@ hr.small {
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: #535928;
+    color: #777!important;
   }
 }
 
@@ -121,7 +122,7 @@ hr.small {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -61px;
-    background-color: #000;
+    background-color: transparent!important;
     border-bottom: 1px solid #f2f2f2;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
@@ -154,7 +155,7 @@ hr.small {
   }
 }
 .intro-header {
-  background-color: #808080;
+  background-color: #FFAD66!important;
   background: no-repeat center center;
   background-attachment: scroll;
   -webkit-background-size: cover;
@@ -286,17 +287,17 @@ hr.small {
   border-bottom-left-radius: 5px;
 }
 footer {
-  padding: 50px 0 65px;
-  background-color: #000;
+  padding: 0;
+  background-color: #333;
 }
 footer .list-inline {
   margin: 0;
-  padding: 0;
+  padding-top: 10px;
 }
 footer .copyright {
   font-size: 14px;
   text-align: center;
-  margin-bottom: 0;
+    padding-bottom: 0;
 }
 .floating-label-form-group {
   font-size: 14px;
@@ -418,12 +419,16 @@ body {
 }
 @media only screen and (max-width: 768px) {
     .navbar-default {
-    background-color: #000;
+    background-color: #333;
 }
 .navbar-default a {
-    color: white!important;
+    color: #777!important;
 }
 .navbar-default a:hover {
-    color: #535928!important;
+    color: #333!important;
+    }
 }
+
+.fa-inverse {
+    color: #eee!important;
 }
