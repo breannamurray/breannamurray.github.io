@@ -35,6 +35,7 @@ h6 {
   font-family: 'GeomanistBook';
   font-weight: 800;
 }
+
 a {
   color: transparent;
 }
@@ -68,7 +69,7 @@ hr.small {
     color: white!important;
 }
 .navbar-default a:hover {
-    color: #FFAD66;
+    color: #333;
 }
 .navbar-default .nav li {
 background-color: transparent!important;
@@ -105,7 +106,7 @@ background-color: transparent!important}
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: #eee!important;
+    color: #333!important;
     border-bottom: #777 solid 1px;
   }
   .navbar-custom .nav li a {
@@ -449,8 +450,10 @@ section.success {
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
-  max-width: 400px;
+  width: 400px;
+  max-height: 230px;
   margin: 0 auto;
+  border: solid 1px #CBCBCB;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
   background: #333;
@@ -982,4 +985,25 @@ fieldset[disabled] .btn-success.active {
         text-align: left;
     }
     
+}
+
+.small-text{
+      font-family: 'GeomanistBook';
+      font-weight: 500;
+      margin-top: 0;
+} 
+
+.project-role {
+    margin-top: 0!important;
+    font-style: normal!important;
+    font-size: 18px;
+}
+
+.project-title {
+    font-style: normal!important;
+    font-size: 30px!important;
+}
+
+.img-responsive {
+    background-size: cover!important;
 }
