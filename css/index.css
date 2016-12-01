@@ -56,6 +56,10 @@ hr.small {
   border-width: 1px;
   border-color: white;
 }
+
+.small, small {
+    font-size: 40%!important;
+}
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -789,7 +793,7 @@ fieldset[disabled] .btn-success.active {
     text-align: right;
     width: 100%;
     position: absolute;
-    padding-left: 60%;
+    padding-left: 55%;
 }
 
 .prototype-text {
@@ -811,7 +815,7 @@ fieldset[disabled] .btn-success.active {
 }
 
 .research {
-    width: 40%;
+    width: 60%;
     position: absolute;
 }
 
@@ -828,6 +832,11 @@ fieldset[disabled] .btn-success.active {
     padding-left: 50%;
 }
 
+.rh-testing {
+    text-align: right;
+    width: 100%;
+}
+
 .transafe-testing {
     text-align: right;
     width: 100%;
@@ -838,7 +847,6 @@ fieldset[disabled] .btn-success.active {
 .ih-testing {
     text-align: right;
     width: 100%;
-    padding-left: 30%;
 }
 
 .portfolio-images {
@@ -861,12 +869,13 @@ fieldset[disabled] .btn-success.active {
 .transafe-sketches {   
     float: left;
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
 }
 
 .transafe-wireframes {
     width: 90%;
+    position: relative;
 }
 
 .transafe-prototype {
@@ -876,6 +885,7 @@ fieldset[disabled] .btn-success.active {
 
 .prototype-text {
     position: absolute;
+    width: 70%;
 }
 
 .transafe-prototype-mobile {
@@ -883,6 +893,9 @@ fieldset[disabled] .btn-success.active {
     float: right;
 }
 
+.space {
+    padding: 10px;
+}
 
 .mobile-preview {
     width: 40%;
@@ -892,9 +905,14 @@ fieldset[disabled] .btn-success.active {
 }
 
 .rh-prototype-img {
-    width: 50%;
+    width: 30%;
     float: right;
     border: solid 1px #CBCBCB;
+}
+
+.transafe-mobile {
+    width: 30%;
+    float: right;
 }
 
 .referral-flow {
@@ -906,7 +924,7 @@ fieldset[disabled] .btn-success.active {
     width: 25%;
 }
 
-#portfolioModal2 {
+#portfolioModal1, #portfolioModal2, #portfolioModal3, #portfolioModal4 {
     overflow:scroll!important;
     overflow-y:scroll!important;
 }
