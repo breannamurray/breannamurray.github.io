@@ -772,6 +772,8 @@ fieldset[disabled] .btn-success.active {
 .transafe-sketches {   
     float: left;
     border-radius: 50%;
+    width: 300px!important;
+    height: 300px!important;
 }
 
 .transafe-img-right {
@@ -869,12 +871,6 @@ fieldset[disabled] .btn-success.active {
     width: 70%;
 }
 
-.transafe-sketches {   
-    float: left;
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-}
 
 .transafe-wireframes {
     width: 90%;
