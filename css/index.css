@@ -769,6 +769,78 @@ fieldset[disabled] .btn-success.active {
     height: 350px;
 }
 
+.row {
+    padding-top: 50px;
+}
+.fitpik-personas {   
+    float: left;
+    width: 450px!important;
+}
+
+.persona-text {
+    text-align: justify;
+    width: 100%;
+    position: absolute;
+    padding-left: 56%;
+}
+
+.flowchart-text {
+    width: 50%;
+    position: absolute;
+    text-align: justify;
+}
+
+.fitpik-flowchart {   
+    float: right;
+    width: 350px!important;
+}
+
+.fitpik-sketches {   
+    float: left;
+    border-radius: 5px;
+    width: 500px!important;
+}
+
+.fpsketch-text {
+    text-align: right;
+    width: 100%;
+    position: absolute;
+    padding-left: 85%;
+}
+
+.fitpik-wireframe {
+    width: 70%;
+    float: right;
+}
+
+.fpwf-text {
+    width: 30%;
+    position: absolute;
+    text-align: justify;
+}
+
+.fitpik-designs {   
+    float: left;
+    width: 400px!important;
+}
+
+.fpdesign-text {
+    text-align: justify;
+    width: 100%;
+    position: absolute;
+    padding-left: 60%;
+}
+
+.fitpik-prototype{
+    width: 40%;
+    float: right;
+}
+
+.fpprototype-text {
+    width: 50%;
+    position: absolute;
+}
+
 .transafe-sketches {   
     float: left;
     border-radius: 50%;
@@ -800,6 +872,7 @@ fieldset[disabled] .btn-success.active {
     position: absolute;
     padding-left: 45%;
 }
+
 
 .prototype-text {
     width: 70%;
