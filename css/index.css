@@ -772,6 +772,24 @@ fieldset[disabled] .btn-success.active {
 .row {
     padding-top: 50px;
 }
+
+.intro {
+    text-align: justify!important;
+}
+
+.fitpik-research {
+    width: 55%;
+    position: absolute;
+    text-align: justify;
+}
+
+.fitpik-postits {
+    height: 400px;
+    float: right;
+    border-radius: 5px;
+}
+
+
 .fitpik-personas {   
     float: left;
     width: 450px!important;
