@@ -7,9 +7,18 @@
     color: #979797;
 }
 
-.fa {
-    color: #000;
+.navbar-brand:hover {
+    color: #A3CFE9;
 }
+
+.fa {
+    color: #979797;
+}
+
+.fa:hover {
+    color: #A3CFE9;
+}
+
 
 
 body {
