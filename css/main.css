@@ -1,0 +1,100 @@
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand {
+    font-family:  'Montserrat', sans-serif;
+    color: #979797;
+}
+
+.fa {
+    color: #000;
+}
+
+
+body {
+  padding-top: 54px;
+  font-family:  'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.card {
+    border: 0px;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+    
+.img-fluid:hover {
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #ddd;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #333;
+  overflow: hidden;
+  height: 0;
+  transition: .5s ease;
+  color: white;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  padding-left: 20px;
+}
+
+.card:hover .overlay {
+  height: 35%;
+}
+
+.subheader {
+    font-weight: 100;
+}
+
+
+/* FITPIK */
+
+.fitpik-hero {
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.persona {
+    display: inline-block;
+    width: 50%;
+    height: 60%;
+}
+
+.fitpik-lofi {
+    display: inline-block;
+    width: 100%;
+}
+
+.left-text {
+    margin-right: 50%;
+    position: absolute;
+}
+
+.right-image {
+    height: 300px;
+    display: absolute;
+    margin-left: 60%;
+    
+}
+
+.full-width{
+    width: 100%;
+}
+
