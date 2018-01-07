@@ -37,6 +37,15 @@ body {
     border: 0px;
 }
 
+.card-header {
+    padding-top: 25px;
+}
+
+.card-subheader {
+    padding-left: 19px;
+    margin-top: -18px;
+}
+
 .img-fluid {
     border-radius: 10px;
 }
