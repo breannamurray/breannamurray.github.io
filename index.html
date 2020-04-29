@@ -1,115 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 
-  <head>
+<style>
+  .arjs-loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  .arjs-loader div {
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+  }
+</style>
 
-    <title>Breanna Murray</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/main.css" rel="stylesheet">
-      
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#" style="font-weight: 100;">Breanna<strong>Murray</strong></a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="https://twitter.com/ibremurray" target="_blank"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.facebook.com/iBreMurray" target="_blank"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/breannamurray/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/breannamurray" target="_blank"><i class="fa fa-github"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-
-      <!-- Related Projects Row -->
-
-      <div class="row">
-
-        <div class="col-md-6 col-sm-6 mb-3 card">
-          <a href="raven.html" class="card">
-            <img class="img-fluid" src="img/raven/newcard.png" alt="">
-                <div class="overlay">
-                    <div class="card-header"><h5>Raven</h5></div>
-                    <div class="card-subheader">UX Design</div>
-                </div>
-          </a>
-        </div>
-
-        <div class="col-md-6 col-sm-6 mb-3">
-          <a href="griffith.html"  class="card">
-            <img class="img-fluid" src="img/griffith/newcard.png" alt="">
-                 <div class="overlay">
-                    <div class="card-header"><h5>Griffith Observatory</h5></div>
-                    <div class="card-subheader">UX Mobile Design</div>
-                </div>
-          </a>
-        </div>
-      </div>
-        
-      <div class="row">
-
-        <div class="col-md-6 col-sm-6 mb-3">
-          <a href="fitpik.html" class="card">
-            <img class="img-fluid" src="img/fitpik/newcard.png" alt="">
-                <div class="overlay">
-                    <div class="card-header"><h5>FitPik</h5></div>
-                    <div class="card-subheader">UI/UX Mobile Design</div>
-                </div>
-          </a>
-        </div>
-          
-        <div class="col-md-6 col-sm-6 mb-3">
-          <a href="microinteractions.html"  class="card">
-            <img class="img-fluid" src="img/microinteractions/newcard.png" alt="">
-                <div class="overlay">
-                    <div class="card-header"><h5>DB Management</h5></div>
-                    <div class="card-subheader">Interaction Design</div>
-                </div>
-          </a>
-        </div>
-        
-
-      </div>
-        
-        
-
-      <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://use.fontawesome.com/7040e672f9.js"></script>
-
-  </body>
-
-</html>
+<body style="margin : 0px; overflow: hidden;">
+  <!-- minimal loader shown until image descriptors are loaded -->
+  <div class="arjs-loader">
+    <div>Loading, please wait...</div>
+  </div>
+  <a-scene
+    vr-mode-ui="enabled: false;"
+    renderer="logarithmicDepthBuffer: true;"
+    embedded
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+  >
+    <!-- we use cors proxy to avoid cross-origin problems -->
+    <a-nft
+      type="nft"
+      url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+    >
+      <a-entity
+        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+        scale="5 5 5"
+        position="50 150 0"
+      >
+      </a-entity>
+    </a-nft>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
