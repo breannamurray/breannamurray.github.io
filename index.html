@@ -7,16 +7,16 @@
         <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
   </head>
   <body style="margin : 0px; overflow: hidden;">
-  <a-scene embedded arjs>
-      <a-assets>
-            <!-- model https://sketchfab.com/3d-models/low-poly-character-rpg-kit-animation-904c06fc53574534a3aace8dba79f796 -->
-        <a-asset-item id="man" src="https://scottturneruon.github.io/temp/temp2/scene.gltf"></a-asset-item>
-      </a-assets>
-    <a-entity light="type:directional; castShadow:true;" position="1 1 1"></a-entity>
-    <a-marker-camera preset="hiro">
-           <a-entity gltf-model="#man" scale="0.005 0.005 0.005" animation-mixer>
-            </a-entity>
-    </a-marker-camera>
-  </a-scene>
+      <a-scene embedded arjs>
+          <a-assets>
+                <!-- model https://sketchfab.com/3d-models/low-poly-character-rpg-kit-animation-904c06fc53574534a3aace8dba79f796 -->
+            <a-asset-item src="https://skfb.ly/ZHRr"></a-asset-item>
+          </a-assets>
+        <a-entity light="type:directional; castShadow:true;" position="1 1 1"></a-entity>
+        <a-marker-camera preset="hiro">
+               <a-entity gltf-model="#man" scale="0.005 0.005 0.005" animation-mixer>
+                </a-entity>
+        </a-marker-camera>
+      </a-scene>
 </body>
 </html>
