@@ -3,9 +3,30 @@
 
 <body>
   <a-scene ar>
-<a href="Aboutdamntime.usdz" rel="ar">
-    <img src="aboutdamntime.png" width=375>
-</a>
+    <a id="ar-link" href="Aboutdamntime.usdz" rel="ar">
+        <img src="aboutdamntime.png">
+    </a>
   </a-scene>
+    
+    <script>
+        const linkElement = document.getElementById("ar-link");
+linkElement.addEventListener("message", function (event) { ... }, false);
+        
+        const linkElement = document.getElementById("ar-link");
+linkElement.addEventListener("message", function (event) {   
+    if (event.data == "_apple_ar_quicklook_button_tapped") {
+                  window.open( 
+              "https://www.geeksforgeeks.org", "_blank");  
+    }
+}, false);
+                                                          
+                                                          
+                                                          
+    </script>
+    
+    
+    
+    
 </body>
 </html>
+
