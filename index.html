@@ -7,9 +7,7 @@
  
     <a-marker preset='hiro'>
       <!--Adding a glTF 2.0 model to your scene-->
-    <a-entity 
-        gltf-model=”url(/bookcover/bookcover.gltf)”>
-    </a-entity>
+<a-assets> <a-asset-item id="bookcover" src="./bookcover/bookcover.gltf"></a-asset-item> </a-assets> <a-entity gltf-model="#bookcover" rotation="-90 0 0"></a-entity>
       
     </a-marker>
 
